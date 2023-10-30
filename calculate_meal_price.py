@@ -24,7 +24,7 @@ def main():
     default_tip_rate = 18.0
     default_tax_rate = 7.0
 
-    # Ask the user if they want to use custom rates
+    # Prompt the user if they want to use custom rates
     use_custom_rates = input("Do you want to use custom tip and tax rates? (yes/no): ").strip().lower()
 
     # Set the tip rate and tax rate
@@ -49,7 +49,7 @@ def main():
             food_charge = float(input("Enter the charge for the food: $"))
             total_charges += food_charge
 
-            # Ask if the user wants to continue adding more charges
+            # Prompt if the user wants to continue adding more charges
             another_charge = input("Do you want to add another charge for this table? (yes/no): ").strip().lower()
             if another_charge != 'yes':
                 break
@@ -65,7 +65,7 @@ def main():
         grand_totals["Sales Tax"] += sales_tax
         grand_totals["Total Amount"] += total_amount
 
-        # Ask if the user wants to add charges for another table
+        # Prompt if the user wants to add charges for another table
         another_table = input("Do you want to add charges for another table? (yes/no): ").strip().lower()
         if another_table != 'yes':
             break

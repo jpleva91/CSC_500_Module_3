@@ -9,11 +9,11 @@ def calculate_alarm_time(current_hours, current_minutes, hours_to_wait, minutes_
 
 
 def main():
-    # Ask the user for the current time in hours and minutes on a 24-hour clock
+    # Prmopt the user for the current time in hours and minutes on a 24-hour clock
     current_time = input("Enter the current time in 'HH:MM' format (24-hour clock): ")
     current_hours, current_minutes = map(int, current_time.split(':'))
 
-    # Ask the user for the number of hours and minutes to wait for the alarm
+    # Prompt the user for the number of hours and minutes to wait for the alarm
     hours_to_wait = int(input("Enter the number of hours to wait for the alarm: "))
     minutes_to_wait = int(input("Enter the number of minutes to wait for the alarm: "))
 
@@ -23,7 +23,7 @@ def main():
     # Display the time when the alarm will go off
     print(f"The alarm will go off at {alarm_hours:02}:{alarm_minutes:02}.")
 
-    # Ask the user if they want to set another alar
+    # Prompt the user if they want to set another alar
     set_another_alarm = input("Do you want to set another alarm? (yes/no): ").strip().lower()
     if set_another_alarm == 'yes':
         main()
